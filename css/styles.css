@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ======================= RESET ======================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ======================= VARIÁVEIS ======================= */
+
+html {
+  --cor-fonte: #1f1f20;
+  --cor-main: #dce0e6ec;
+  --cor-aside: #606d80e3;
+}
+
+
+/*======================= CONFIGURAÇÃO DA DISPOSIÇÃO E SCROLLBAR ======================= */
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1521114978264-2223e08aa0d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--cor-fonte);
+  font-size: 20px;
+
+}
+
+
+.container {
+  display: flex;
+
+}
+
+main {
+  order: 2;
+  flex-basis: 80%;
+  flex-grow: 1;
+  background-color: var(--cor-main);
+  margin-left: 25px;
+}
+
+aside {
+  background-color: var(--cor-aside);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+  flex-basis: 20%;
+  gap: 10px;
+  padding: 10px;
+  color: white;
+
+}
+
+
+
+
+/* ======================= ASIDE  ======================= */
+
+aside img {
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: 0.3s;
+  transform: scale(0.8);
+}
+
+aside img:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+aside a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+aside a:hover {
+  color: #1f1f20;
+}
+
+
+
+/* ======================= SECTIONS =======================*/
+
+
+.secao-1,
+.secao-2,
+.secao-4 {
+  margin: 20px;
+  padding: 16px;
+  border: 1px solid #2b4c7e;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.secao-1:hover,
+.secao-2:hover,
+.secao-4:hover {
+  transform: scale(1);
+}
+
+.secao-1 h1,
+.secao-1 h2,
+.secao-2 h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.titulo-networking {
+  margin: 10px 20px;
+}
+
+.secao-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.secao-3 img {
+  border-radius: 10px;
+  width: 300px;
+  object-fit: contain;
+  transition: 0.3s;
+  transform: scale(0.9);
+  opacity: 0.85;
+}
+
+
+.secao-3 img:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.secao-4 p {
+  padding: 5px 0
+}
+
+
+
+/* ======================= LISTA DE ICONES DE SKILL =======================*/
+
+.lista-skilss {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.lista-skilss li {
+  font-size: 25px;
+  margin: 25px 0;
+  font-size: 30px;
+}
+
+.lista-skilss i {
+  font-size: 40px;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+
+.lista-skilss i:hover {
+  transform: scale(1.5);
+}
+
+
+.fa-java:hover,
+.java:hover {
+  color: rgb(12, 139, 198);
+}
+
+.fa-square-js:hover,
+.javaScript:hover {
+  color: #EFD91C;
+}
+
+.fa-angular:hover,
+.angular:hover {
+  color: #BC012E;
+}
+
+.fa-database:hover,
+.mySql:hover {
+  color: #01758E;
+}
+
+
+
+/* ======================= BOTÃO FLUTUANTE  ======================= */
+
+.btn-whatsapp {
+  font-size: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  transform: scale(0.7);
+  transition: 0.3s;
+
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1);
+}
+
+/* ======================= MEDIA QUERIES ======================= */
+
+@media screen and (max-width: 1023px) {
+  .titulo-networking {
+    text-align: center;
+    margin: 10px 20px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .secao-3 img {
+    width: 600px;
+  }
+
+  main {
+    margin-left: 0;
+
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .titulo-networking {
+    text-align: center;
+    margin: 10px 20px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .secao-3 img {
+    width: 500px;
+  }
+
+  .btn-whatsapp {
+
+    font-size: 60px;
+
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .titulo-networking {
+    text-align: center;
+    margin: 10px 20px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .secao-3 img {
+    width: 300px;
+  }
+
+  .btn-whatsapp {
+    right: 10px;
+    font-size: 50px;
+
+  }
+
+}
