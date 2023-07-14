@@ -1,0 +1,4 @@
+- A biblioteca de ícones utilizadas foi a: https://fontawesome.com/
+- Os textos que compõe o portifólio foi gerado por IA (ChatGPT).
+- A foto de perfil usada é do banco de imagens: https://unsplash.com/
+- O único texto que não foi gerado com IA é a parte de Inspiração e aprendizado, onde conto como conheci a linguagem Java e os professores que me guiaram.
